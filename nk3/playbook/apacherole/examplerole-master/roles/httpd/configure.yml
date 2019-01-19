@@ -1,0 +1,5 @@
+---
+  - name: create default site configurations
+    copy: src=default.conf dest=/etc/http.d/conf mode=0644
+  - name: create home page for default site
+    copy: src=index.html dest=/var/www/html/index.html
